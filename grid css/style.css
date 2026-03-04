@@ -1,0 +1,61 @@
+
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.all-layouts {
+    display: flex;
+    flex-direction: column-reverse; 
+    gap: 60px; 
+    align-items: center;
+}
+
+
+.bento-box {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-auto-rows: 100px;
+    gap: 8px; 
+    background-color: #ffffff;
+    padding: 15px;
+    border: 3px solid #000000; 
+}
+
+
+.color-red    { background-color: #dd4242; }
+.color-blue   { background-color: #4747d3; }
+.color-green  { background-color: #5bc45b; }
+.color-yellow { background-color: #e2e270; }
+.color-purple { background-color: #a84ca8; }
+.color-orange { background-color: #da9d2c; }
+.color-teal   { background-color: #39c0c0; }
+.color-pink   { background-color: #d65e72; }
+
+
+.wide {
+    grid-column: span 2;
+}
+
+.full {
+    grid-column: span 3;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.layout-1 .wide { grid-column: span 2; }
+
+
+.layout-1, .layout-2, .layout-3, .layout-4, .layout-5 {
+    width: fit-content;
+}
